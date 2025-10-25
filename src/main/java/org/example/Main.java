@@ -18,5 +18,20 @@ public class Main {
 
     }
 
+    public static Boolean isPerfectNumber(int sayi){
+        if(sayi<1){
+            return false;
+        }
+        int toplam=0;
+        for(int i =1; i<sayi; i++){
+            if(sayi%i == 0){
+                toplam = toplam+i;
+            }
+        }
+        return toplam == sayi;
+    }
+
+
+
 
 }
